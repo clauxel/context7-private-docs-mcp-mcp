@@ -1,47 +1,48 @@
 # Context7 Private Docs MCP
 
-Give agents private, version-pinned docs they can cite.
+Context7 Private Docs MCP is a hosted remote MCP for Context7 MCP docs.
 
-Context7 Private Docs MCP is a paid hosted remote MCP for private, version-pinned documentation context, source citations, stale-doc checks, and usage receipts for coding agents.
+This repository is a public documentation project for Context7 Private Docs MCP. Its structure follows the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and a public-safe boundary.
 
-## Public Endpoints
+## Start Here
 
-- Website: https://context7docs.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- MCP endpoint: https://context7docs.clauxel.com/mcp
+- Website: https://context7docs.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=context7docs_public_docs&utm_content=readme_home
+- Pricing: https://context7docs.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=context7docs_public_docs&utm_content=readme_pricing
+- Checkout: https://context7docs.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=context7docs_public_docs&utm_content=readme_checkout
+- Support: support@aigeamy.com
+
+## Remote MCP
+
+- Endpoint: https://context7docs.clauxel.com/mcp
 - Server card: https://context7docs.clauxel.com/server-card.json
 - Registry name: `com.clauxel.context7docs/context7docs-mcp`
+- Tools: `query_private_docs`, `resolve_version_example`, `check_stale_reference`, `get_docs_receipt`
 
-## Access
+## Reading Order
 
-This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
+1. [Quickstart](guide/quickstart.md)
+2. [Evaluation guide](guide/evaluation.md)
+3. [Checkout and pricing](guide/checkout-and-pricing.md)
+4. [Workflow notes](features/workflow.md)
+5. [Security model](features/security-model.md)
+6. [Public link reference](reference/links.md)
 
-```http
-Authorization: Bearer <token>
-```
+## Audience
 
-Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
+AI product teams, operations leads, workflow owners, and technical evaluators.
 
-## Tools
+## Capabilities
 
-- `query_private_docs`
-- `resolve_version_example`
-- `check_stale_reference`
-- `get_docs_receipt`
+- Streamable HTTP MCP endpoint
+- Bearer-token access for production calls
+- Structured tool-call output
+- Receipt-oriented evidence export
+- Public server card and registry metadata
+- MCP tool: query_private_docs
+- MCP tool: resolve_version_example
+- MCP tool: check_stale_reference
+- MCP tool: get_docs_receipt
 
-## Quick Start
+## Public-Safe Boundary
 
-1. Open the website and choose a plan.
-2. Create or request an API token.
-3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
-4. Send JSON-RPC requests with the bearer token.
-
-## Useful Links
-
-- Product page: https://context7docs.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
-- Pricing: https://context7docs.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605#pricing
-- Server card: https://context7docs.clauxel.com/server-card.json
-- MCP endpoint: https://context7docs.clauxel.com/mcp
-
-## Status
-
-This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
+This repository contains documentation only. It does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
