@@ -1,0 +1,15 @@
+# Context7 Private Docs MCP
+
+Context7 Private Docs MCP is a hosted remote MCP for Context7 MCP docs.
+
+Website: https://context7docs.clauxel.com/
+Docs pattern reference: https://github.com/clauxel/MiroFish
+Primary keyword: Context7 MCP docs
+Type: MCP
+Default plan: team
+MCP endpoint: https://context7docs.clauxel.com/mcp
+Server card: https://context7docs.clauxel.com/server-card.json
+Registry name: com.clauxel.context7docs/context7docs-mcp
+Tools: query_private_docs, resolve_version_example, check_stale_reference, get_docs_receipt
+
+Public boundary: docs-only repository; no production source code or secrets.
