@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.clauxel.context7docs/context7docs-mcp",
+  "description": "Context7 Private Docs MCP is a hosted remote MCP for Context7 MCP docs.",
+  "version": "1.0.0",
+  "website_url": "https://context7docs.clauxel.com/",
+  "repository": {
+    "url": "https://github.com/clauxel/context7-private-docs-mcp-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://context7docs.clauxel.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token from the product website.",
+          "is_required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "title": "Context7 Private Docs MCP MCP",
+      "server_card_url": "https://context7docs.clauxel.com/server-card.json"
+    }
+  }
+}
